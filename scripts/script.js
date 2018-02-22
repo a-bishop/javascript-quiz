@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 				// if the current number of correct answers is greater than highscore,
 				// set highscore to the current score
-				if (numCorrect >= highscore) {
+				if (numCorrect > highscore) {
 					$("#fader").text("That's your best score!").fadeIn(2000);
 					$("#fader").fadeOut(3000);
 					sessionStorage.setItem("highscore", numCorrect);
