@@ -1,0 +1,108 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>
+        Javascript -- Testify!
+      </title>
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="scripts/script.js"></script>
+  </head>
+    <body>
+      <main>
+        <h1>JavaScript Quiz</h1>
+        <p>Test your knowledge in <b>Javascript</b></p>
+        <hr></hr>
+        <form id="quiz">
+        <div id="score"></div>
+        <h3>1. A function's default return value is:</h3>
+        <div class="questions">
+          <input type="radio" id="1a" name="question1">
+          <label for="1a">a. null</label>
+          <br>
+          <input type="radio" id="1correct" name="question1">
+          <label for="1b">b. undefined</label>
+          <br>
+          <input type="radio" id="1c" name="question1">
+          <label for="1c">c. no value</label>
+          <br>
+          <input type="radio" id="1d" name="question1">
+          <label for="1d">d. true</label>
+        </div>
+
+        <h3>2. Which of the following is not a Math method?</h3>
+        <div class="questions">
+          <input type="radio" id="2a" name="question2">
+          <label for="2a">a. Math.ceil()</label>
+          <br>
+          <input type="radio" id="2b" name="question2">
+          <label for="2b">b. Math.fround()</label>
+          <br>
+          <input type="radio" id="2c" name="question2">
+          <label for="2c">c. Math.abs()</label>
+          <br>
+          <input type="radio" id="2correct" name="question2">
+          <label for="2d">d. Math.rand()</label>
+        </div>
+
+        <h3>3. If a function declares a new local variable (using var) that has
+          the same name as a global variable, the function uses</h3>
+        <div class="questions">
+          <input type="radio" id="3a" name="question3">
+          <label for="3a">a. the global variable.</label>
+          <br>
+          <input type="radio" id="3correct" name="question3">
+          <label for="3b">b. the local variable.</label>
+          <br>
+          <input type="radio" id="3c" name="question3">
+          <label for="3c">c. neither variable. It causes an error.</label>
+          <br>
+          <input type="radio" id="3d" name="question3">
+          <label for="3d">d. both the global and the local variable.</label>
+        </div>
+
+        <h3>4. What purpose does myFunction serve here? <br>
+          <div id="function">function myFunction() { <br>
+          &nbsp; document.getElementById("demo").innerHTML = "Hello World!";<br>
+          }</div></h3>
+        <div class="questions">
+          <input type="radio" id="4a" name="question4">
+          <label for="4a">a. It gets the element with class "demo" and changes the
+          HTML content to "Hello World!"</label>
+          <br>
+          <input type="radio" id="4correct" name="question4">
+          <label for="4b">b. It gets the element with ID "demo" and changes the
+          HTML content to "Hello World!"</label>
+          <br>
+          <input type="radio" id="4c" name="question4">
+          <label for="4c">c. It gets the element with ID "demo" and changes the
+          text content to "Hello World!"</label>
+          <br>
+          <input type="radio" id="4d" name="question4">
+          <label for="4d">d. It gets the element with ID "demo" and changes the
+          ID to "Hello World!"</label>
+        </div>
+
+        <h3>5. What does the following expression evaluate to? <br>
+          <div id="expression">var e = "fed"; <br> /e{0,2}/.test(e);
+          </div></h3>
+        <div id="questions">
+          <input type="radio" id="5correct"  name="question5">
+          <label for="5a">a. true</label>
+          <br>
+          <input type="radio" id="5b" name="question5">
+          <label for="5b">b. false</label>
+        </div>
+          <br>
+
+        <input type="button" id="submit" value="Submit Answers">
+        </form>
+        <div>
+        <h3 id="results"></h3>
+        <div id="fader"></div>
+        </div>
+        <hr></hr>
+        <footer>Copyright &copy; 2018.</footer>
+      </main>
+    </body>
+</html>
