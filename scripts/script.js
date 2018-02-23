@@ -12,13 +12,13 @@ $(document).ready(function() {
 
 		// submitting the quiz
 		$("#submit").click(function() {
-			var numCorrect = 0;
-			var highscore = sessionStorage.getItem("highscore");
 
 			// confirm buttons have all been checked
 			if ($("input:radio:checked").length < 5) {
 				alert("You need to select answers for all the questions!");
 			} else {
+				var numCorrect = 0;
+				var highscore = sessionStorage.getItem("highscore");
 
 				// determine if checked buttons are correct
 				$("input:radio:checked").each(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
 					}
 				});
 
-        // show the score
+        			// show the score
 				$("#score").text("You scored " + numCorrect + " out of 5").fadeIn(3000);
 				$("#results").text("RESULTS: " + sessionStorage.getItem("username") + ", you scored " + numCorrect + " out of 5").fadeIn(3000);
 
