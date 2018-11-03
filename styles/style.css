@@ -4,7 +4,7 @@
 
 main {
   padding-top: 10px;
-  background-color: #7B8D8E;
+  background-color: lightgray;
   width: 75%;
   margin: 0 auto;
   color: black;
@@ -15,7 +15,7 @@ main {
 }
 
 body {
-  background-color: #F2EDD8;
+  background-color: grey;
 }
 
 hr {
@@ -32,6 +32,8 @@ hr {
   margin-top: 2%;
   margin-bottom: 1%;
   font-size: 1em;
+  padding: 0.3%;
+  border-radius: 4px;
 }
 
 #function, #expression {
